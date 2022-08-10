@@ -1,0 +1,41 @@
+<nav class="navbar">
+  <div class="name-website">
+    <h1>Google Books</h1>
+  </div>
+
+  <div class="nav-btn">
+    <button
+      [routerLink]="['/']"
+      class="btn-home-favorites"
+    >Главная</button>
+    <button
+      [routerLink]="['/favorites']"
+      class="btn-home-favorites"
+    >Избранное</button>
+  </div>
+</nav>
+
+<form class="form" [formGroup]="form">
+  <div class="line-center">
+    <input type="search-line" placeholder="Поиск..." formControlName="search">
+
+    <select formControlName="categories">
+      <option value="business">Один</option>
+      <option value="fiction">Два</option>
+      <option value="flowers">Три</option>
+    </select>
+
+  </div>
+
+  <app-post
+    *ngFor="let p of posts | searchBook:searchText"
+    [post]="p"
+  >
+  </app-post>
+
+  <div class="block-btn">
+    <button class="btn-plus" (click)="loadBooks()">Ещё</button>
+
+    <button class="btn-new" (click)="newRel()">Показать новее</button>
+  </div>
+</form>
