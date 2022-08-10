@@ -1,0 +1,30 @@
+.btn-and-xzkaknazvat {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-favorites {
+  width: 25px;
+  height: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.svg {
+  position: relative;
+  top: -2px;
+  left: -11.5px;
+  width: 25px;
+  height: 25px;
+  fill: #d0a2e5;
+}
+
+
+.btn-fav {
+  background: none;
+  border: none;
+  margin-top: 15px;
+  width: 19px;
+  height: 25px;
+}

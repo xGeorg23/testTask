@@ -1,0 +1,23 @@
+<nav class="navbar nav-center">
+  <div class="name-website center">
+    <h1>Post Google Books</h1>
+  </div>
+</nav>
+
+<div class="post-center">
+  <div class="posts">
+    <div class="title-button">
+      <div class="title">
+        <h1>{{post?.volumeInfo?.title}}</h1>
+        <p>{{post?.volumeInfo?.authors}}</p>
+      </div>
+      <button
+        [routerLink]="['/']"
+        class="btn btn-back"
+      >На главную</button>
+    </div>
+    <div class="text">
+      <p>{{post?.volumeInfo?.description}}</p>
+    </div>
+  </div>
+</div>

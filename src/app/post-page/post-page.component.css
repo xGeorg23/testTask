@@ -1,0 +1,40 @@
+.nav-center {
+  display: flex;
+  justify-content: center;
+}
+
+.post-center {
+  display: flex;
+  justify-content: center;
+}
+
+.posts {
+  padding: 20px;
+  width: 800px;
+  margin-top: 15px;
+}
+
+.title h1{
+  margin-bottom: 5px;
+}
+
+.title p{
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.title-button {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 7px;
+}
+
+.btn-back {
+  color: aliceblue;
+  background: black;
+  height: 30px;
+  margin-top: 30px;
+}
+
+.but {
+}
